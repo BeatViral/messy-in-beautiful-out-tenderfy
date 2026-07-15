@@ -9,7 +9,7 @@ export const scenario: ScenarioData = {
   storyEntries: [
     {
       id: 'm1',
-      text: 'We have just received the North Coast Water Treatment Upgrade tender. It closes next Friday and the response schedule is much larger than we expected.',
+      text: 'We received the North Coast Water Treatment Upgrade tender yesterday. Can we use the Kingscliff project for this one?',
       time: '9:41',
       attachment: {
         id: 'rft',
@@ -21,7 +21,7 @@ export const scenario: ScenarioData = {
     },
     {
       id: 'm2',
-      text: 'We should use our Kingscliff Pump Station project as the main example. Alex ran that job and the client was very happy, but I don’t think the case study includes the commissioning result.',
+      text: 'Alex ran Kingscliff. I’ve attached the case study, his CV and our current WHS plan.',
       time: '9:43',
       voice: {
         duration: '1:18',
@@ -39,11 +39,6 @@ export const scenario: ScenarioData = {
       id: 'm3',
       text: 'Our estimator also said the proposed programme is six weeks, but the methodology still says eight. I’m not sure which version is in the current draft.',
       time: '9:46',
-    },
-    {
-      id: 'm4',
-      text: 'Can Tenderfy work out what we already have, what still needs an answer and turn the useful parts into the submission?',
-      time: '9:47',
     },
   ],
   storyNote: 'This is how tender knowledge actually arrives.',

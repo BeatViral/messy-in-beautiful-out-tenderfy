@@ -49,10 +49,10 @@ export function useDemoSequence(messageCount: number, stepCount: number) {
       return
     }
     Array.from({ length: stepCount }).forEach((_, index) => {
-      const timer = window.setTimeout(() => setActiveStep(index), index * 1050)
+      const timer = window.setTimeout(() => setActiveStep(index), index * 240)
       timers.current.push(timer)
     })
-    timers.current.push(window.setTimeout(complete, stepCount * 1050 + 450))
+    timers.current.push(window.setTimeout(complete, stepCount * 240 + 280))
   }, [clearTimers, complete, messageCount, reduceMotion, stepCount])
 
   const reset = useCallback(() => {

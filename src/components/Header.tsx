@@ -13,7 +13,6 @@ export function Header({ company, onReset }: HeaderProps) {
         <span className="wordmark-full">{company.conceptName}</span>
         <span className="wordmark-short">M → B</span>
       </a>
-      <span className="header-concept">{company.conceptLabel}</span>
       <nav className="header-links" aria-label="Primary navigation">
         <a href={company.links.founderLab} target="_blank" rel="noreferrer">
           Founder Lab <ExternalLink size={12} aria-hidden="true" />
