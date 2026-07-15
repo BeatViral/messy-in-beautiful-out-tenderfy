@@ -6,29 +6,28 @@ export const company: CompanyConfig = {
   companyUrl: 'https://tenderfy.org/',
   conceptLabel: 'Tenderfy Concept',
   hero: {
-    eyebrow: 'AN INDEPENDENT PRODUCT THOUGHT FOR TENDERFY',
-    title: ['Messy in.', 'Beautiful out.'],
-    statement:
-      'Tender knowledge rarely arrives clean. It arrives through conversations, voice notes, old documents, project memories and people too busy to write tender responses.',
-    question: 'What if they could simply tell Tenderfy the story?',
-    primaryCta: 'See the story become a tender',
-    secondaryCta: 'View the finished output',
-    annotation: 'A story-first contribution layer for Tenderfy',
-    flow: ['Conversation', 'Evidence', 'Requirements', 'Submission'],
+    eyebrow: 'AN INDEPENDENT PRODUCT OPPORTUNITY FOR TENDERFY',
+    title: ['Your project team tells the story.', 'Tenderfy turns it into tender-ready evidence.'],
+    statement: 'Messages, voice notes and project files in. Verified evidence for the bid team out.',
+    question: 'I studied Tenderfy’s public website. Today, Tenderfy turns company content and team inputs into polished tender submissions.',
+    primaryCta: 'See the story become evidence',
+    secondaryCta: '',
+    annotation: 'A story-first contribution layer for operational project experts',
+    flow: ['Project story', 'Evidence', 'Bid-manager review'],
   },
   insight: {
     kicker: 'THE PRODUCT INSIGHT',
-    title: 'The best tender evidence is often trapped inside the team.',
+    title: 'The strongest project evidence often starts with the people who delivered the work.',
     body:
-      'Project managers, engineers, estimators and site supervisors know what happened, why it worked and what the client valued. Story Intake lets them contribute naturally—without asking them to become tender writers.',
+      'Project managers, engineers, estimators and site supervisors can contribute project knowledge naturally before it has become formal tender evidence.',
     quote:
-      'Your people hold the evidence. Tenderfy turns their stories into submission-ready work.',
+      'Your people hold the evidence. Tenderfy turns their stories into tender-ready material for the bid team.',
   },
   opportunity: {
     eyebrow: 'THE PRODUCT OPPORTUNITY',
     heading: [
-      'Tenderfy already structures the tender.',
-      'Story Intake unlocks the knowledge trapped inside the team.',
+      'Tenderfy already turns company content and team inputs into polished tender submissions.',
+      'This independent opportunity makes operational contribution effortless.',
     ],
     today: [
       'Bid manager chases project staff.',

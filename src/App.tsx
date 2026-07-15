@@ -42,7 +42,7 @@ function App() {
               <StoryPhone scenario={scenario} visibleMessages={demo.visibleMessages} completed={demo.phase === 'processing' || demo.phase === 'complete'} />
               {!started && <button className="start-story-button" type="button" onClick={startDemo}>Play the story</button>}
             </div>
-            <TransformationEngine phase={demo.phase} />
+              <TransformationEngine phase={demo.phase} activeStep={demo.activeStep} steps={scenario.processSteps} />
             <div className="output-column">
               <p className="object-label"><i /><span>BEAUTIFUL OUT / TENDER WORK</span></p>
               <BeautifulOutput scenario={scenario} productName={company.companyName} complete={demo.phase === 'complete'} />
@@ -50,8 +50,8 @@ function App() {
           </div>
         </section>
         <section className="closing-insight section-shell">
-          <h2>Don’t make every expert become a tender writer.<br /><span>Let them tell the story only they know.</span></h2>
-          <p>Tenderfy turns that knowledge into structured tender work.</p>
+          <h2>Your strongest tender evidence may not be in the content library yet.<br /><span>It may still be inside the people who delivered the work.</span></h2>
+          <p>Let them tell the story. Tenderfy turns it into evidence the bid team can use.</p>
         </section>
         <BuilderFooter company={company} />
       </main>

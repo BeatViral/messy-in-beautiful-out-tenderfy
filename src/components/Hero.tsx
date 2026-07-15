@@ -12,14 +12,15 @@ export function Hero({ company, onStart }: HeroProps) {
     <section className="hero section-shell" id="top">
       <div className="hero-copy">
         <p className="eyebrow"><span />{company.hero.eyebrow}</p>
+        <p className="hero-diagnosis">{company.hero.question}</p>
         <motion.h1 initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-          <span>Your team tells the story.</span>
-          <span className="hero-accent">Tenderfy builds the tender.</span>
+          <span>{company.hero.title[0]}</span>
+          <span className="hero-accent">{company.hero.title[1]}</span>
         </motion.h1>
-        <p className="hero-statement">Messages, voice notes and documents in. Submission-ready work out.</p>
+        <p className="hero-statement">{company.hero.statement}</p>
         <div className="hero-actions">
           <button className="button button-primary" type="button" onClick={onStart}>
-            See it work<ArrowDownRight size={18} aria-hidden="true" />
+            {company.hero.primaryCta}<ArrowDownRight size={18} aria-hidden="true" />
           </button>
         </div>
       </div>

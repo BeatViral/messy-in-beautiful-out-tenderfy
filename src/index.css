@@ -719,6 +719,7 @@ button.requirement-row:hover { background: rgba(255,255,255,.025); }
 .simplified-app .hero-copy { max-width: 1080px; padding: 0; }
 .simplified-app .hero h1 { margin: 25px auto 28px; font-size: clamp(52px, 6.5vw, 98px); line-height: .94; }
 .simplified-app .hero-statement { max-width: none; color: #dbe4e5; font: 600 clamp(17px, 1.6vw, 22px)/1.45 'Manrope', sans-serif; }
+.hero-diagnosis { max-width: 700px; margin: 19px auto 0; color: var(--steel); font-size: 13px; line-height: 1.55; }
 .simplified-app .hero-actions { justify-content: center; margin-top: 29px; }
 .simplified-app .hero-actions .button { min-width: 145px; }
 .simplified-app .demo-section { padding: 48px 0 94px; background: transparent; }
@@ -759,6 +760,15 @@ button.requirement-row:hover { background: rgba(255,255,255,.025); }
 .simple-document > p { max-width: 490px; margin: 0; color: #405058; font-size: 10px; line-height: 1.65; }
 .source-labels { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 17px; }.source-labels span { padding: 5px 6px; border: 1px solid #c5ccc7; color: #506068; font: 6.5px 'IBM Plex Mono'; }
 .illustrative-note { display: flex; justify-content: flex-end; align-items: center; gap: 5px; margin: 12px 0 0; color: #788991; font: 7px 'IBM Plex Mono'; }.illustrative-note svg { color: var(--lime); }
+.evidence-capture-list { display: grid; gap: 7px; margin-bottom: 16px; }
+.evidence-capture-row { padding: 12px 13px; border: 1px solid var(--line); background: rgba(255,255,255,.018); }
+.evidence-capture-row h3 { display: flex; align-items: center; gap: 7px; margin: 0 0 8px; color: var(--lime); font: 600 8px 'IBM Plex Mono'; letter-spacing: .08em; }
+.evidence-capture-row ul { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.evidence-capture-row li { padding: 4px 6px; border: 1px solid rgba(201,255,114,.18); color: #d7e0e1; font-size: 8px; line-height: 1.35; }
+.evidence-capture-2 h3 { color: var(--cyan); }.evidence-capture-2 li { border-color: rgba(99,230,255,.22); }
+.evidence-capture-3 h3 { color: var(--amber); }.evidence-capture-3 li { border-color: rgba(255,184,102,.3); color: #f0d8bb; }
+.matched-requirement { display: grid; gap: 5px; margin: 16px 0; padding: 13px; border-left: 2px solid var(--lime); background: rgba(201,255,114,.05); }
+.matched-requirement span { color: var(--steel); font: 7px 'IBM Plex Mono'; letter-spacing: .08em; }.matched-requirement b { font: 700 11px 'Manrope'; }.matched-requirement p { margin: 0; color: var(--lime); font: 600 8px 'IBM Plex Mono'; letter-spacing: .06em; }
 
 .simplified-app .closing-insight { padding: 88px 0 100px; border-top: 1px solid var(--line); text-align: center; }
 .closing-insight h2 { max-width: 1080px; margin: 0 auto; font: 700 clamp(36px, 5vw, 70px)/1.05 'Manrope'; letter-spacing: -.055em; }
@@ -778,6 +788,7 @@ button.requirement-row:hover { background: rgba(255,255,255,.025); }
 @media (max-width: 760px) {
   .simplified-app .hero { min-height: 390px; padding: 108px 0 45px; text-align: left; }
   .simplified-app .hero h1 { margin-top: 20px; font-size: clamp(46px, 13vw, 68px); }
+  .hero-diagnosis { margin-top: 16px; font-size: 12px; }
   .simplified-app .hero-actions { justify-content: flex-start; }.simplified-app .hero-actions .button { width: auto; }
   .simplified-app .demo-section { padding: 26px 0 68px; }
   .simplified-app .demo-workbench { display: flex; flex-direction: column; gap: 27px; }

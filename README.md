@@ -6,13 +6,13 @@ This is a concept by Mahmood Matloob. It is not an official Tenderfy product and
 
 ## What it demonstrates
 
-A bid manager contributes a realistic project story through messages, a voice note, and documents. A deterministic local sequence then shows the story being mapped into tender requirements, evidence, gaps, owners, review actions, and a polished submission preview.
+A project manager contributes a realistic delivery story through messages, a voice note, and supporting files. A deterministic local sequence then captures measurable evidence, separates documented facts from human contribution, identifies what still needs verification, and prepares tender-ready material for bid-manager review.
 
 The page is deliberately static: it uses no backend, database, authentication, live WhatsApp integration, paid API, external AI service, or fake network call. All content and metrics are illustrative local demo data.
 
 ## Current scenario
 
-The Tenderfy concept follows Northline Civil's response to the fictional North Coast Water Treatment Upgrade tender. The story reveals useful Kingscliff Pump Station evidence, a programme conflict, missing commissioning information, and a staged continuity-of-operations methodology.
+The Tenderfy concept follows Alex, a Northline Civil project manager, contributing knowledge from the fictional Kingscliff Pump Station Upgrade. The story captures a staged continuity-of-operations method, documented delivery outcomes, and a client-feedback statement that remains visibly unverified until confirmed.
 
 ## Technology
 
