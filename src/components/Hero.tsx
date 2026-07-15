@@ -13,6 +13,7 @@ export function Hero({ company, onStart }: HeroProps) {
       <div className="hero-copy">
         <p className="eyebrow"><span />{company.hero.eyebrow}</p>
         <p className="hero-diagnosis">{company.hero.question}</p>
+        <p className="hero-opportunity">{company.hero.annotation}</p>
         <motion.h1 initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <span>{company.hero.title[0]}</span>
           <span className="hero-accent">{company.hero.title[1]}</span>

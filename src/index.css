@@ -720,6 +720,7 @@ button.requirement-row:hover { background: rgba(255,255,255,.025); }
 .simplified-app .hero h1 { margin: 25px auto 28px; font-size: clamp(52px, 6.5vw, 98px); line-height: .94; }
 .simplified-app .hero-statement { max-width: none; color: #dbe4e5; font: 600 clamp(17px, 1.6vw, 22px)/1.45 'Manrope', sans-serif; }
 .hero-diagnosis { max-width: 700px; margin: 19px auto 0; color: var(--steel); font-size: 13px; line-height: 1.55; }
+.hero-opportunity { max-width: 700px; margin: 8px auto 0; color: #dce5e6; font-size: 13px; line-height: 1.55; }
 .simplified-app .hero-actions { justify-content: center; margin-top: 29px; }
 .simplified-app .hero-actions .button { min-width: 145px; }
 .simplified-app .demo-section { padding: 48px 0 94px; background: transparent; }
@@ -789,6 +790,7 @@ button.requirement-row:hover { background: rgba(255,255,255,.025); }
   .simplified-app .hero { min-height: 390px; padding: 108px 0 45px; text-align: left; }
   .simplified-app .hero h1 { margin-top: 20px; font-size: clamp(46px, 13vw, 68px); }
   .hero-diagnosis { margin-top: 16px; font-size: 12px; }
+  .hero-opportunity { font-size: 12px; }
   .simplified-app .hero-actions { justify-content: flex-start; }.simplified-app .hero-actions .button { width: auto; }
   .simplified-app .demo-section { padding: 26px 0 68px; }
   .simplified-app .demo-workbench { display: flex; flex-direction: column; gap: 27px; }

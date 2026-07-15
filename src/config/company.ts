@@ -8,11 +8,11 @@ export const company: CompanyConfig = {
   hero: {
     eyebrow: 'AN INDEPENDENT PRODUCT OPPORTUNITY FOR TENDERFY',
     title: ['Your project team tells the story.', 'Tenderfy turns it into tender-ready evidence.'],
-    statement: 'Messages, voice notes and project files in. Verified evidence for the bid team out.',
+    statement: 'Messages, voice notes and project files in. Structured evidence for the bid team out—with anything unverified clearly flagged.',
     question: 'I studied Tenderfy’s public website. Today, Tenderfy turns company content and team inputs into polished tender submissions.',
     primaryCta: 'See the story become evidence',
     secondaryCta: '',
-    annotation: 'A story-first contribution layer for operational project experts',
+    annotation: 'The opportunity I found: capture valuable project knowledge before it has been written down or added to the content library.',
     flow: ['Project story', 'Evidence', 'Bid-manager review'],
   },
   insight: {
