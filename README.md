@@ -54,7 +54,7 @@ Company-specific narrative and links live in `src/config/company.ts`. Scenario-s
 
 ## Create a future company version with Codex
 
-Give Codex only a public `COMPANY_URL` and use `prompts/generate-company-demo.md`. The repository-level `AGENTS.md` describes the research, opportunity-selection, integrity, implementation, and validation rules. The generator must investigate the company, avoid duplicating an existing feature, and decline to force the concept when there is no credible opportunity.
+This is the reusable baseline for future company-specific versions. See [TEMPLATE.md](TEMPLATE.md) for the required inputs and delivery checklist. In a new task, provide a company brief and a target GitHub repository; a company URL can be included as supporting research. The generator must investigate the company, avoid duplicating an existing feature, and decline to force the concept when there is no credible opportunity.
 
 ## Disclaimer
 
