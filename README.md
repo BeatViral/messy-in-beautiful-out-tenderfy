@@ -12,7 +12,7 @@ The page is deliberately static: it uses no backend, database, authentication, l
 
 ## Current scenario
 
-The Tenderfy concept follows Alex, a Northline Civil project manager, contributing knowledge from the fictional Kingscliff Pump Station Upgrade. The story captures a staged continuity-of-operations method, documented delivery outcomes, and a client-feedback statement that remains visibly unverified until confirmed.
+The default Tenderfy concept follows Alex, a Northline Civil project manager, contributing knowledge from the fictional Kingscliff Pump Station Upgrade. Visitors can also replay short programme-recovery, safety-improvement, and stakeholder-management contributions. Each story captures documented evidence, a human contribution, and one claim that remains visibly unverified until confirmed.
 
 ## Technology
 

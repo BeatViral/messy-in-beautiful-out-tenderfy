@@ -55,12 +55,12 @@ export function useDemoSequence(messageCount: number, stepCount: number) {
     timers.current.push(window.setTimeout(complete, stepCount * 240 + 280))
   }, [clearTimers, complete, messageCount, reduceMotion, stepCount])
 
-  const reset = useCallback(() => {
+  const reset = useCallback((scrollToTop = true) => {
     clearTimers()
     setPhase('idle')
     setVisibleMessages(0)
     setActiveStep(-1)
-    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' })
+    if (scrollToTop) window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' })
   }, [clearTimers, reduceMotion])
 
   return { phase, visibleMessages, activeStep, startStory, transform, skip: complete, reset }

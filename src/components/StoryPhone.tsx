@@ -44,7 +44,7 @@ export function StoryPhone({ scenario, visibleMessages, completed }: StoryPhoneP
               {scenario.storyEntries.slice(0, visibleMessages).map((entry) => <StoryMessage entry={entry} key={entry.id} />)}
             </AnimatePresence>
             {visibleMessages > 0 && visibleMessages < scenario.storyEntries.length && (
-              <motion.div className="typing-indicator" initial={{ opacity: 0 }} animate={{ opacity: 1 }} aria-label="Mia is typing">
+              <motion.div className="typing-indicator" initial={{ opacity: 0 }} animate={{ opacity: 1 }} aria-label={`${scenario.sender.name} is typing`}>
                 <i /><i /><i />
               </motion.div>
             )}

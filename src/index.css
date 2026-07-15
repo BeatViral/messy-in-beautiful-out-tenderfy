@@ -729,6 +729,11 @@ button.requirement-row:hover { background: rgba(255,255,255,.025); }
 .simplified-app .object-label { width: 100%; margin-bottom: 18px; }
 .simplified-app .object-label:first-child { justify-content: flex-end; }
 .simplified-app .output-column { min-width: 0; }
+.story-switcher { width: min(500px, 100%); margin: 0 auto 20px; }
+.story-switcher > p { margin: 0 0 8px; color: var(--steel); font: 8px 'IBM Plex Mono'; letter-spacing: .1em; }
+.story-switcher > div { display: flex; flex-wrap: wrap; gap: 5px; }
+.story-switcher button { min-height: 34px; padding: 0 10px; border: 1px solid var(--line); border-radius: 99px; color: var(--steel); background: rgba(7,19,31,.72); cursor: pointer; font-size: 8px; transition: border-color .2s ease, color .2s ease, background .2s ease; }
+.story-switcher button:hover { border-color: rgba(99,230,255,.5); color: #fff; }.story-switcher button[aria-pressed='true'] { border-color: var(--lime); color: var(--ink); background: var(--lime); }
 .simple-engine { width: 100%; min-height: 180px; padding: 0; border: 0; background: transparent; box-shadow: none; overflow: visible; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; }
 .simple-engine::before, .simple-engine::after { display: none; }
 .simple-engine > p { margin: 0; color: #d8e0e2; font: 600 9px 'IBM Plex Mono'; letter-spacing: .14em; white-space: nowrap; }
@@ -795,6 +800,7 @@ button.requirement-row:hover { background: rgba(255,255,255,.025); }
   .simplified-app .demo-section { padding: 26px 0 68px; }
   .simplified-app .demo-workbench { display: flex; flex-direction: column; gap: 27px; }
   .simplified-app .messy-column, .simplified-app .output-column { width: min(100%, 400px); }
+  .story-switcher { width: 100%; }.story-switcher button { min-height: 38px; }
   .simplified-app .output-column { width: 100%; }
   .simplified-app .object-label:first-child { justify-content: flex-start; }
   .simplified-app .simple-engine { order: 2; min-height: 102px; flex-direction: row; gap: 14px; }

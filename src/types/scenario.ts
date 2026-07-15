@@ -87,3 +87,9 @@ export interface ScenarioData {
     sources: string[]
   }
 }
+
+export interface ProjectStory {
+  id: string
+  label: string
+  scenario: ScenarioData
+}

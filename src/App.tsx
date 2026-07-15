@@ -6,11 +6,14 @@ import { Hero } from './components/Hero'
 import { StoryPhone } from './components/StoryPhone'
 import { TransformationEngine } from './components/TransformationEngine'
 import { company } from './config/company'
-import { scenario } from './data/scenario'
+import { projectStories } from './data/scenario'
 import { useDemoSequence } from './hooks/useDemoSequence'
 
 function App() {
-  const demo = useDemoSequence(scenario.storyEntries.length, scenario.processSteps.length)
+  const [selectedStoryId, setSelectedStoryId] = useState(projectStories[0]!.id)
+  const activeStory = projectStories.find((story) => story.id === selectedStoryId) ?? projectStories[0]!
+  const activeScenario = activeStory.scenario
+  const demo = useDemoSequence(activeScenario.storyEntries.length, activeScenario.processSteps.length)
   const [started, setStarted] = useState(false)
 
   const startDemo = () => {
@@ -19,11 +22,19 @@ function App() {
     window.setTimeout(() => document.querySelector('#story-demo')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 70)
   }
 
+  const selectStory = (storyId: string) => {
+    if (storyId === selectedStoryId) return
+    demo.reset(false)
+    setSelectedStoryId(storyId)
+    setStarted(true)
+    window.setTimeout(demo.startStory, 80)
+  }
+
   useEffect(() => {
-    if (demo.phase !== 'story' || demo.visibleMessages !== scenario.storyEntries.length) return
+    if (demo.phase !== 'story' || demo.visibleMessages !== activeScenario.storyEntries.length) return
     const timer = window.setTimeout(demo.transform, 420)
     return () => window.clearTimeout(timer)
-  }, [demo.phase, demo.transform, demo.visibleMessages])
+  }, [activeScenario.storyEntries.length, demo.phase, demo.transform, demo.visibleMessages])
 
   const reset = () => {
     setStarted(false)
@@ -38,14 +49,20 @@ function App() {
         <section className="demo-section" id="story-demo">
           <div className="section-shell demo-workbench">
             <div className="messy-column">
+              <div className="story-switcher">
+                <p>TRY ANOTHER PROJECT STORY</p>
+                <div role="group" aria-label="Choose a fictional project story">
+                  {projectStories.map((story) => <button type="button" key={story.id} onClick={() => selectStory(story.id)} aria-pressed={story.id === selectedStoryId}>{story.label}</button>)}
+                </div>
+              </div>
               <p className="object-label"><span>MESSY IN / THE TEAM STORY</span><i /></p>
-              <StoryPhone scenario={scenario} visibleMessages={demo.visibleMessages} completed={demo.phase === 'processing' || demo.phase === 'complete'} />
+              <StoryPhone key={activeStory.id} scenario={activeScenario} visibleMessages={demo.visibleMessages} completed={demo.phase === 'processing' || demo.phase === 'complete'} />
               {!started && <button className="start-story-button" type="button" onClick={startDemo}>Play the story</button>}
             </div>
-              <TransformationEngine phase={demo.phase} activeStep={demo.activeStep} steps={scenario.processSteps} />
+            <TransformationEngine phase={demo.phase} activeStep={demo.activeStep} steps={activeScenario.processSteps} />
             <div className="output-column">
               <p className="object-label"><i /><span>BEAUTIFUL OUT / TENDER WORK</span></p>
-              <BeautifulOutput scenario={scenario} productName={company.companyName} complete={demo.phase === 'complete'} />
+              <BeautifulOutput key={activeStory.id} scenario={activeScenario} productName={company.companyName} complete={demo.phase === 'complete'} />
             </div>
           </div>
         </section>
