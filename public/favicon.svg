@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Messy In to Beautiful Out">
+  <rect width="64" height="64" rx="14" fill="#07131F"/>
+  <path d="M13 42V22h5l6 9 6-9h5v20h-5V30l-6 9-6-9v12h-5Z" fill="#C9FF72"/>
+  <path d="M39 32h10m-4-4 4 4-4 4" fill="none" stroke="#63E6FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
